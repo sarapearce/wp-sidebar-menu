@@ -1,0 +1,42 @@
+Widget Name: Wordpress Sidebar Menu
+Action: Shows and Hides a Sidebar (offical WP one, not CSS rectangle)
+
+Pseudo Code:
+
+make into WP plugin
+
+inside app.js:
+  jQuery(document).ready(function($){
+
+    function addXIcon() {
+      
+    }
+
+    function addClickEvent() {
+      $(myuniqueclassonthebutton).click(function(){
+          if (!$(mysidebarclass).hasClass('show')) {
+            $(mysidebarclass).addClass('show').removeClass('hide');
+            //remove the hamburger icon
+            //show the x icon
+           else {
+            $(mysidebarclass).addClass('hide').removeClass('show');
+            //remove the X icon
+            // show the hamburger icon
+           }
+        }
+      })
+    }
+
+
+  });
+
+
+inside style.CSS
+
+  .show {
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
